@@ -1,0 +1,578 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEADERBOARD - Diamond Rewards</title>
+    <!-- link for css -->
+    <link rel="stylesheet" href="styles2.css">
+
+    <!-- link for font awosemo -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- link for swiper -->
+    <link rel="shortcut icon" href="/assets/images/logo.svg" type="image/x-icon">
+</head>
+
+<body class="leadership-page">
+    <!-- Code for heaedr -->
+   
+
+    <nav>
+        <div class="logo">
+          <img src="assets/images/rewards-logo.png" alt="Rewards Logo" class="logo-image">
+          <a href="#home">
+            <span class="logo-text">
+              <span class="diamond">DIAMOND</span>
+              <span class="rewards">REWARDS</span>
+            </span>
+          </a>
+        </div>
+      
+        <!-- Hamburger Icon -->
+        <div class="hamburger" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      
+        <div class="nav-links">
+          <a href="index.html" class="nav-link">HOME</a>
+          <a href="index.html#rewards" class="nav-link">REWARDS</a>
+          <a href="clash-leaderboard.html" class="nav-link active">LEADERBOARDS</a>
+        </div>
+      </nav>
+      
+      <!-- Content below the nav -->
+      <div class="h1-title-container">
+        <div class="h1-title">
+          <a href="clash-leaderboard.html">
+            <img src="assets/images/clash-logo.gif" id="active" alt="Clash GG">
+          </a>
+        </div>
+        <div class="vertical-line"></div>
+        <div class="h1-title">
+          <a href="rain-leaderboard.html">
+            <img class="rain-image" src="assets/images/rain.gg.png" alt="Rain GG">
+          </a>
+        </div>
+      </div>
+      
+    
+         
+       
+      
+
+        <section class="timer-package">
+            <div class="container">
+                <div class="row d-flex">
+                    <div class="col-1 center">
+                        <div class="img-apackage">
+                            <img src="assets/images/gold-crown.png" alt="" class="img-fluid crown-image">
+                            <img src="assets/images/avatar.png" style="border-radius: 50px;" class="img-fluid">
+                        </div>
+                        <p class="rank">#2</p>
+                        <h1>User2</h1>
+                        <div class="underline"></div>
+                        <div class="dollar-wagered">
+                            <p>WAGERED <br>
+                                <span style="margin-left: 10px;">
+                                    <img src="assets/images/rain-coin.svg" alt="dollar sign" class="dollar-img" style="max-width: 20px;">
+                                    0.00
+                                </span>
+                            </p>
+                        </div>
+                        <h2 style="margin-left: 20px;"> <img src="assets/images/rain-coin.svg" class="dollar-img" alt="" style="max-width: 25px;">0</h2>
+                    </div>
+                <div class="col-1 center">
+                    <div class="img-apackage">
+                        <img src="assets/images/gold-crown.png" alt="" class="img-fluid crown-image">
+                        <img src="assets/images/avatar.png" style="border-radius: 50px;" class="img-fluid">
+                    </div>
+                    <p class="rank">#1</p>
+                    <h1>User1</h1>
+                    <div class="underline"></div>
+                    <div class="dollar-wagered">
+                        <p>WAGERED <br>
+                            <span style="margin-left: 10px;">
+                                <img src="assets/images/rain-coin.svg" alt="dollar sign" class="dollar-img" style="max-width: 20px;">
+                                0.00
+                            </span>
+                        </p>
+                    </div>
+                    <h2 style="margin-left: 20px;"> <img src="assets/images/rain-coin.svg" alt="dollar sign" class="dollar-img" style="max-width: 25px;" >0</h2>
+                </div>
+                
+                <div class="col-1 center">
+                    <div class="img-apackage">
+                        <img src="assets/images/gold-crown.png" alt="" class="img-fluid crown-image">
+                        <img src="assets/images/avatar.png" style="border-radius: 50px;" class="img-fluid">
+                    </div>
+                    <p class="rank">#3</p>
+                    <h1>User3</h1>
+                    <div class="underline"></div>
+                    <div class="dollar-wagered">
+                        <p>WAGERED <br>
+                            <span style="margin-left: 10px;">
+                                <img src="assets/images/rain-coin.svg" alt="dollar sign" class="dollar-img" style="max-width: 20px;">
+                                0.00
+                            </span>
+                        </p>
+                    </div>
+                    <h2 style="margin-left: 20px;"> <img src="assets/images/rain-coin.svg" class="dollar-img" alt="" style="max-width: 25px;">0</h2>
+                </div>
+        </section>
+
+        <section class="count-down">
+            <div class="container">
+                <div class="row">
+                    <div class="underline col-1"></div>
+                    <div class="countdown col-2">
+                        <div>
+                            <span id="days">00</span>
+                            <div class="label">Days</div>
+                        </div>
+                        <div>
+                            <span id="hours">00</span>
+                            <div class="label">Hours</div>
+                        </div>
+                        <div>
+                            <span id="minutes">00</span>
+                            <div class="label">Minutes</div>
+                        </div>
+                        <div>
+                            <span id="seconds">00</span>
+                            <div class="label">Seconds</div>
+                        </div>
+                    </div>
+                    <div class="underline  col-1"></div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <section class="participants">
+            <div class="container">
+                <div class="row d-flex align-center justify-between">
+                    <h1>Participants</h1>
+                    <p><img src="assets/images/watch-icon.png" alt="" class="img-fluid">Last Winners</p>
+                </div>
+
+                <div class="row-content">
+                    <div class="col-without-bg d-flex align-center justify-between">
+                        <div class="box-content">
+                            <p><img src="assets/images/user-icon.png" alt="" class="img-fluid">USER</p>
+                        </div>
+                        <div class="box-content d-flex align-center">
+                            <p style="margin-right: 57px;"><img src="assets/images/rain-coin.svg" style="max-width: 15px; vertical-align: middle; margin-right: -2px;" alt="" class="img-fluid"> WAGERED</p>
+                            <p><img src="assets/images/trophe-icon.png" style="vertical-align: middle;" alt="" class="img-fluid"> REWARD</p>
+                        </div>
+                    </div>
+                    <div class="box d-flex justify-between">
+                    <div class="sub-box d-flex align-center">
+                        <p class="numer">4</p>
+                        <p class="d-flex align-center">
+                            <img src="assets/images/avatar.png" style="border-radius: 50px;"  class="img-fluid">
+                            User
+                        </p>
+                    </div>
+                    <div class="sub-box d-flex align-center">
+                        <div class="pri-box d-flex align-center" style="gap: 0px;">
+                            <img src="assets/images/rain-coin.svg" style="max-width: 15px; margin-right: 5px;"> 
+                            <p style="margin-right: 143px;">0</p>
+                        </div>
+                        <div class="pri-box d-flex align-center" style="gap: 0px;">
+                            <img src="assets/images/rain-coin.svg" alt="" class="img-fluid" style="max-width: 15px;">
+                            <p style="margin-right: 59px;">0</p>
+                        </div>
+                    </div>
+                </div><div class="box d-flex justify-between">
+                    <div class="sub-box d-flex align-center">
+                        <p class="numer">5</p>
+                        <p class="d-flex align-center">
+                            <img src="assets/images/avatar.png" style="border-radius: 50px;"  class="img-fluid">
+                            User
+                        </p>
+                    </div>
+                    <div class="sub-box d-flex align-center">
+                        <div class="pri-box d-flex align-center" style="gap: 0px;">
+                            <img src="assets/images/rain-coin.svg" style="max-width: 15px; margin-right: 5px;"> 
+                            <p style="margin-right: 143px;">0</p>
+                        </div>
+                        <div class="pri-box d-flex align-center" style="gap: 0px;">
+                            <img src="assets/images/rain-coin.svg" alt="" class="img-fluid" style="max-width: 15px;">
+                            <p style="margin-right: 59px;">0</p>
+                        </div>
+                    </div>
+                </div><div class="box d-flex justify-between">
+                    <div class="sub-box d-flex align-center">
+                        <p class="numer">6</p>
+                        <p class="d-flex align-center">
+                            <img src="assets/images/avatar.png" style="border-radius: 50px;"  class="img-fluid">
+                            User
+                        </p>
+                    </div>
+                    <div class="sub-box d-flex align-center">
+                        <div class="pri-box d-flex align-center" style="gap: 0px;">
+                            <img src="assets/images/rain-coin.svg" style="max-width: 15px; margin-right: 5px;"> 
+                            <p style="margin-right: 143px;">0</p>
+                        </div>
+                        <div class="pri-box d-flex align-center" style="gap: 0px;">
+                            <img src="assets/images/rain-coin.svg" alt="" class="img-fluid" style="max-width: 15px;">
+                            <p style="margin-right: 59px;">0</p>
+                        </div>
+                    </div>
+                </div><div class="box d-flex justify-between">
+                    <div class="sub-box d-flex align-center">
+                        <p class="numer">7</p>
+                        <p class="d-flex align-center">
+                            <img src="assets/images/avatar.png" style="border-radius: 50px;"  class="img-fluid">
+                            User
+                        </p>
+                    </div>
+                    <div class="sub-box d-flex align-center">
+                        <div class="pri-box d-flex align-center" style="gap: 0px;">
+                            <img src="assets/images/rain-coin.svg" style="max-width: 15px; margin-right: 5px;"> 
+                            <p style="margin-right: 143px;">0</p>
+                        </div>
+                        <div class="pri-box d-flex align-center" style="gap: 0px;">
+                            <img src="assets/images/rain-coin.svg" alt="" class="img-fluid" style="max-width: 15px;">
+                            <p style="margin-right: 59px;">0</p>
+                        </div>
+                    </div>
+                </div><div class="box d-flex justify-between">
+                    <div class="sub-box d-flex align-center">
+                        <p class="numer">8</p>
+                        <p class="d-flex align-center">
+                            <img src="assets/images/avatar.png" style="border-radius: 50px;"  class="img-fluid">
+                            User
+                        </p>
+                    </div>
+                    <div class="sub-box d-flex align-center">
+                        <div class="pri-box d-flex align-center" style="gap: 0px;">
+                            <img src="assets/images/rain-coin.svg" style="max-width: 15px; margin-right: 5px;"> 
+                            <p style="margin-right: 143px;">0</p>
+                        </div>
+                        <div class="pri-box d-flex align-center" style="gap: 0px;">
+                            <img src="assets/images/rain-coin.svg" alt="" class="img-fluid" style="max-width: 15px;">
+                            <p style="margin-right: 59px;">0</p>
+                        </div>
+                    </div>
+                </div><div class="box d-flex justify-between">
+                    <div class="sub-box d-flex align-center">
+                        <p class="numer">9</p>
+                        <p class="d-flex align-center">
+                            <img src="assets/images/avatar.png" style="border-radius: 50px;"  class="img-fluid">
+                            User
+                        </p>
+                    </div>
+                    <div class="sub-box d-flex align-center">
+                        <div class="pri-box d-flex align-center" style="gap: 0px;">
+                            <img src="assets/images/rain-coin.svg" style="max-width: 15px; margin-right: 5px;"> 
+                            <p style="margin-right: 143px;">0</p>
+                        </div>
+                        <div class="pri-box d-flex align-center" style="gap: 0px;">
+                            <img src="assets/images/rain-coin.svg" alt="" class="img-fluid" style="max-width: 15px;">
+                            <p style="margin-right: 59px;">0</p>
+                        </div>
+                    </div>
+                </div><div class="box d-flex justify-between">
+                    <div class="sub-box d-flex align-center">
+                        <p class="numer">10</p>
+                        <p class="d-flex align-center">
+                            <img src="assets/images/avatar.png" style="border-radius: 50px; margin-left: -7px;"  class="img-fluid">
+                            User
+                        </p>
+                    </div>
+                    <div class="sub-box d-flex align-center">
+                        <div class="pri-box d-flex align-center" style="gap: 0px;">
+                            <img src="assets/images/rain-coin.svg" style="max-width: 15px; margin-right: 5px;"> 
+                            <p style="margin-right: 143px;">0</p>
+                        </div>
+                        <div class="pri-box d-flex align-center" style="gap: 0px;">
+                            <img src="assets/images/rain-coin.svg" alt="" class="img-fluid" style="max-width: 15px;">
+                            <p style="margin-right: 59px;">0</p>
+                        </div>
+                    </div>
+                </div><div class="box d-flex justify-between">
+                    <div class="sub-box d-flex align-center">
+                        <p class="numer">11</p>
+                        <p class="d-flex align-center">
+                            <img src="assets/images/avatar.png" style="border-radius: 50px; margin-left: -4px;"  class="img-fluid">
+                            User
+                        </p>
+                    </div>
+                    <div class="sub-box d-flex align-center">
+                        <div class="pri-box d-flex align-center" style="gap: 0px;">
+                            <img src="assets/images/rain-coin.svg" style="max-width: 15px; margin-right: 5px;"> 
+                            <p style="margin-right: 143px;">0</p>
+                        </div>
+                        <div class="pri-box d-flex align-center" style="gap: 0px;">
+                            <img src="assets/images/rain-coin.svg" alt="" class="img-fluid" style="max-width: 15px;">
+                            <p style="margin-right: 59px;">0</p>
+                        </div>
+                    </div>
+                </div><div class="box d-flex justify-between">
+                    <div class="sub-box d-flex align-center">
+                        <p class="numer">12</p>
+                        <p class="d-flex align-center">
+                            <img src="assets/images/avatar.png" style="border-radius: 50px; margin-left: -7px;"  class="img-fluid">
+                            User
+                        </p>
+                    </div>
+                    <div class="sub-box d-flex align-center">
+                        <div class="pri-box d-flex align-center" style="gap: 0px;">
+                            <img src="assets/images/rain-coin.svg" style="max-width: 15px; margin-right: 5px;"> 
+                            <p style="margin-right: 143px;">0</p>
+                        </div>
+                        <div class="pri-box d-flex align-center" style="gap: 0px;">
+                            <img src="assets/images/rain-coin.svg" alt="" class="img-fluid" style="max-width: 15px;">
+                            <p style="margin-right: 59px;">0</p>
+                        </div>
+                    </div>
+                </div><div class="box d-flex justify-between">
+                    <div class="sub-box d-flex align-center">
+                        <p class="numer">13</p>
+                        <p class="d-flex align-center">
+                            <img src="assets/images/avatar.png" style="border-radius: 50px; margin-left: -7px;"  class="img-fluid">
+                            User
+                        </p>
+                    </div>
+                    <div class="sub-box d-flex align-center">
+                        <div class="pri-box d-flex align-center" style="gap: 0px;">
+                            <img src="assets/images/rain-coin.svg" style="max-width: 15px; margin-right: 5px;"> 
+                            <p style="margin-right: 143px;">0</p>
+                        </div>
+                        <div class="pri-box d-flex align-center" style="gap: 0px;">
+                            <img src="assets/images/rain-coin.svg" alt="" class="img-fluid" style="max-width: 15px;">
+                            <p style="margin-right: 59px;">0</p>
+                        </div>
+                    </div>
+                </div><div class="box d-flex justify-between">
+                    <div class="sub-box d-flex align-center">
+                        <p class="numer">14</p>
+                        <p class="d-flex align-center">
+                            <img src="assets/images/avatar.png" style="border-radius: 50px; margin-left: -7px;"  class="img-fluid">
+                            User
+                        </p>
+                    </div>
+                    <div class="sub-box d-flex align-center">
+                        <div class="pri-box d-flex align-center" style="gap: 0px;">
+                            <img src="assets/images/rain-coin.svg" style="max-width: 15px; margin-right: 5px;"> 
+                            <p style="margin-right: 143px;">0</p>
+                        </div>
+                        <div class="pri-box d-flex align-center" style="gap: 0px;">
+                            <img src="assets/images/rain-coin.svg" alt="" class="img-fluid" style="max-width: 15px;">
+                            <p style="margin-right: 59px;">0</p>
+                        </div>
+                    </div>
+                </div><div class="box d-flex justify-between">
+                    <div class="sub-box d-flex align-center">
+                        <p class="numer">15</p>
+                        <p class="d-flex align-center">
+                            <img src="assets/images/avatar.png" style="border-radius: 50px; margin-left: -7px;"  class="img-fluid">
+                            User
+                        </p>
+                    </div>
+                    <div class="sub-box d-flex align-center">
+                        <div class="pri-box d-flex align-center" style="gap: 0px;">
+                            <img src="assets/images/rain-coin.svg" style="max-width: 15px; margin-right: 5px;"> 
+                            <p style="margin-right: 143px;">0</p>
+                        </div>
+                        <div class="pri-box d-flex align-center" style="gap: 0px;">
+                            <img src="assets/images/rain-coin.svg" alt="" class="img-fluid" style="max-width: 15px;">
+                            <p style="margin-right: 59px;">0</p>
+                        </div>
+                </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <footer>
+            <div class="container">
+                <div class="row d-flex">
+                    <div class="col-1">
+                        <div class="logo-2">
+                            <a href="index.html">
+                                <img src="assets/images/rewards-logo.png" class="img-fluid-2" style="max-width: 50%; border-radius: 10px; ">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <h3>MAIN</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="index.html#Rewards">Rewards</a></li>
+                            <li><a href="leaderboard.html">Leaderboard</a></li>
+                           
+                        </ul>
+                    </div>
+                    
+                    <div class="col-1">
+                        <h3>SUPPORT</h3>
+                        <ul>
+                            
+                            <li><a target="_blank" href="https://discord.gg/WtZ8V775">Discord Support</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-2">
+                        <h4>STAY CONNECTED</h4>
+                        <div class="icons d-flex align-center">
+                            <a target="_blank" href="https://kick.com/decadecs">
+                                <div class="icon-wrapper">
+                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M3 2H11.0001V3.99998H13.0001V2H21V9.99994H19V13.9999H21V22H13.0001V20H11.0001V22H3V2ZM13.0001 18H15.0001V20H19V15.9999H17V13.9999H15V9.99992H17V7.99994H19V4H15.0001V5.99998H13.0001V7.99996H9.0001V4H5V20H9.0001V16H13.0001V18Z"></path></svg>
+                                </div>
+                            </a>
+                            <a target="_blank" href="https://x.com/DecadeCSGambles"><i
+                                    class="fa-brands fa-x-twitter"></i></a>
+                            <a target="_blank" href="https://www.youtube.com/@DecadeCS"><i
+                                    class="fa-brands fa-youtube"></i></a>
+                            <a target="_blank" href="https://discord.gg/WtZ8V775"><i
+                                    class="fa-brands fa-discord"></i></a>
+                        </div>
+                    </div>
+                    
+                    
+                <hr>
+                <div class="plus-18 d-flex align-center">
+                    <img src="./assets/images/18-plus.png" alt="" class="img-fluid">
+                    <p>We do not take responsibility for any losses from gambling in casinos and betting sites which are
+                        linked or
+                        promoted on our website. As a player, you are responsible for your bets.</p>
+                </div>
+                <p class="copy-right center">© 2024 <a href="/">DiamondRewards.com</a>. All Rights Reserved.</p>
+            </div>
+        </footer>
+
+
+
+        <!-- <div class="btn">
+        <a href="#"><img src="/assets/images/left-btn-img.png" alt="" class="img-fluid">Btn Soomro<img src="/assets/images/right-btn-img.png" alt="" class="img-fluid"></a>
+    </div> -->
+
+        <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/assets/js/script.js"></script>
+
+        <script>
+            function toggleMenu() {
+  const navLinks = document.querySelector('.nav-links');
+  const titleContainer = document.querySelector('.h1-title-container');
+
+  navLinks.classList.toggle('active');
+  titleContainer.classList.toggle('active');
+}
+
+
+            async function fetchCountdownData() {
+                try {
+                    const response = await fetch('/api/countdown');
+                    const data = await response.json();
+                    const end = new Date(data.end).getTime();
+        
+                    function updateCountdown() {
+                        const currentTime = Date.now(); // Use client's current time
+                        const timeDifference = end - currentTime;
+        
+                        if (timeDifference <= 0) {
+                            document.getElementById("days").innerText = "S";
+                            document.getElementById("hours").innerText = "O";
+                            document.getElementById("minutes").innerText = "O";
+                            document.getElementById("seconds").innerText = "N";
+                            return;
+                        }
+        
+                        const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+                        const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                        const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+                        const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+        
+                        document.getElementById("days").innerText = String(days).padStart(2, "0");
+                        document.getElementById("hours").innerText = String(hours).padStart(2, "0");
+                        document.getElementById("minutes").innerText = String(minutes).padStart(2, "0");
+                        document.getElementById("seconds").innerText = String(seconds).padStart(2, "0");
+                    }
+        
+                    // Initial call to set the countdown
+                    updateCountdown();
+                    // Set an interval to update the countdown every second
+                    setInterval(updateCountdown, 1000);
+                } catch (error) {
+                    console.error("Error fetching countdown data:", error);
+                }
+            }
+        
+            fetchCountdownData();
+        
+            document.addEventListener('DOMContentLoaded', function () {
+                const dropdown = document.querySelector('.rules-dropdown');
+                const toggleBtn = dropdown.querySelector('.dropdown-toggle');
+        
+                toggleBtn.addEventListener('click', function () {
+                    dropdown.classList.toggle('active');
+                });
+            });
+        </script>
+
+
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"8b66586ced0cb333","version":"2024.8.0","r":1,"token":"3731f8c6a47f490e8259d0eace9d1e21","serverTiming":{"name":{"cfL4":true}}}' crossorigin="anonymous"></script>
+</body>
+
+</html>
