@@ -871,4 +871,13 @@ p {
     .bonuses-section::before, .bonuses-section::after {
          display: none; 
     }
+
+    .claim-bonuses-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 150px;
+        margin-bottom: -150px; /* Adjust the margin to position just below the buttons */
+    }
+    
   }
